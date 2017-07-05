@@ -25,7 +25,7 @@ public class Diretorio {
 		/**
 		 * Listar arquivos de um diretório.
 		*/
-		Path dir = Paths.get("D:/");
+		Path dir = Paths.get("C:/");
 		DirectoryStream<Path> listaArquivos = Files.newDirectoryStream(dir);
 		
 		for(Path path : listaArquivos){
