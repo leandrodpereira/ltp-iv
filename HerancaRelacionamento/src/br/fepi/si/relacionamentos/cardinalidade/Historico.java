@@ -24,6 +24,11 @@ public class Historico {
 	public void setAluno(Aluno aluno) {
 		this.aluno = aluno;
 	}
+	@Override
+	public String toString() {
+		return "Historico [conclusao=" + conclusao + ", media=" + media + "]";
+	}
+	
 	
 	
 
