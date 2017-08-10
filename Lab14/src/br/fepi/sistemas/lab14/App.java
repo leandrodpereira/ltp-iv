@@ -4,6 +4,8 @@ public class App {
 	//Constantes
 	static final String[] sexo = {"Masculino" , "Feminino" }; 
 
+	
+	
 	public static void main(String[] args) {
 		//Usando constantes
 		System.out.println(App.sexo[0]);

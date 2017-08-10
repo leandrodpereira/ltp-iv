@@ -30,6 +30,9 @@ public class App {
 		for(Aluno recebeAluno : listaDeAlunos){
 			System.out.println(recebeAluno.getNome());
 		}
+		
+		
+		
 	}
 
 }

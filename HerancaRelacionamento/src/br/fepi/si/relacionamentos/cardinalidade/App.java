@@ -37,6 +37,22 @@ public class App {
 		for(Funcionario lista : e.getFuncionarios()){
 			System.out.println(lista.getNome()+" trabalha na Empresa: "+e.getNome());
 		}
+		
+		//N para N
+		Game g1 = new Game();
+		g1.setGenero("RPG");
+		g1.setTitulo("The Wizard");
+		Game g2 = new Game();
+		g2.setGenero("Aventura");
+		g2.setTitulo("‎Rogue Soul 2");
+		
+		Cliente c = new Cliente();
+		c.setNome("Joãozinho");
+		c.setEndereco("Av. Brasil");
+		c.getGames().add(g1);
+		c.getGames().add(g2);
+		
+		System.out.println(c.toString());
 	}
 
 }
