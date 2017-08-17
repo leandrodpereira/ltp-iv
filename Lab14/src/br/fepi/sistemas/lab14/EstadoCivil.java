@@ -2,6 +2,6 @@ package br.fepi.sistemas.lab14;
 
 public enum EstadoCivil {
 	
-	casado, solteiro, viúvo, divorciado, outros;
+	casado, solteiro, viuvo, divorciado, outros;
 
 }

@@ -6,7 +6,7 @@ public class AlunoPos extends Aluno  {
 	private String orientador;
 	
 	public AlunoPos (String nome, String matricula){super(nome, matricula);}
-	//super(nome, matricula) é a mesma operação: this.setNome(nome);this.setMatricula(matricula); da classe mãe
+	//super(nome, matricula) ï¿½ a mesma operaï¿½ï¿½o: this.setNome(nome);this.setMatricula(matricula); da classe mï¿½e
 
 
 	public int getAnoConclusaoGrad() {
@@ -29,6 +29,13 @@ public class AlunoPos extends Aluno  {
 
 	public void setOrientador(String orientador) {
 		this.orientador = orientador;
+	}
+
+
+	@Override
+	public String toString() {
+		return "AlunoPos [anoConclusaoGrad=" + anoConclusaoGrad + 
+				", orientador=" + orientador + super.toString() + "]";
 	}
 
 	
