@@ -6,6 +6,8 @@ public class Motor {
 	private double potencia;
 	private int qtdCilindro;
 	
+	
+	
 	public int getSerie() {
 		return serie;
 	}
