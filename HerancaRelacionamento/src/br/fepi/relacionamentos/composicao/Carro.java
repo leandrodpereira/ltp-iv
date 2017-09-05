@@ -6,6 +6,9 @@ public class Carro {
 	private String modelo;
 	private Motor motor = new Motor();
 	
+	
+	
+	
 	public String getPlaca() {
 		return placa;
 	}
