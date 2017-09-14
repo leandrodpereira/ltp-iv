@@ -3,19 +3,24 @@ package br.fepi.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Evento {
+public abstract class Evento implements Premiacao{
 	
 	private int id;
 	private String nome;
 	private String data;
-	private String local;	
+	private String local;
+	private double kilometragem;
+	private double tempoProva;
 	private List<Posicao> posicoes = new ArrayList<>();
 	
-	public Evento(int id, String nome, String data, String local, List<Posicao> posicoes) {
+	public Evento(int id, String nome, String data, String local, 
+			double kilometragem, double tempoProva, List<Posicao> posicoes) {
 		setId(id);
 		setNome(nome);
 		setData(data);
 		setLocal(local);
+		setKilometragem(kilometragem);
+		setTempoProva(tempoProva);
 		setPosicoes(posicoes);
 	}
 	
@@ -54,12 +59,32 @@ public abstract class Evento {
 	}
 
 
-	@Override
-	public String toString() {
-		return "Evento [id=" + id + ", nome=" + nome + ", "
-				+ "data=" + data + ", local=" + local
-				+ "]";
+	public double getKilometragem() {
+		return kilometragem;
 	}
 
+
+	public void setKilometragem(double kilometragem) {
+		this.kilometragem = kilometragem;
+	}
+
+
+	public double getTempoProva() {
+		return tempoProva;
+	}
+
+
+	public void setTempoProva(double tempoProva) {
+		this.tempoProva = tempoProva;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Evento [id=" + id + ", nome=" + nome + ", data=" + data + ", local=" + local + ", kilometragem="
+				+ kilometragem + ", tempoProva=" + tempoProva + ", posicoes=" + posicoes + "]";
+	}
+
+	
 			
 }

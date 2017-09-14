@@ -4,20 +4,21 @@ import java.util.List;
 
 public class Paraciclismo extends Evento {
 	
-	private double tempoProva;
-
-	public Paraciclismo(int id, String nome, String data, String local, 
-			List<Posicao> posicoes, double tempoProva) {
-		super(id, nome, data, local, posicoes);
-		setTempoProva(tempoProva);
+	
+	public Paraciclismo(int id, String nome, String data, String local, double kilometragem, double tempoProva,
+			List<Posicao> posicoes) {
+		super(id, nome, data, local, kilometragem, tempoProva, posicoes);
+		
 	}
 
-	public double getTempoProva() {
-		return tempoProva;
+	@Override
+	public double calculaPremio() {
+		// TODO Auto-generated method stub
+		return 3_500.00;
 	}
 
-	public void setTempoProva(double tempoProva) {
-		this.tempoProva = tempoProva;
-	}
+	
+
+	
 
 }

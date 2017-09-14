@@ -4,16 +4,16 @@ import java.util.List;
 
 public class Estrada extends Evento {
 	
-	private double kilometragem;
-	private boolean acidentado; 
-
-	public Estrada(int id, String nome, String data, 
-			String local, List<Posicao> posicoes, double kilometragem, boolean acidentado) {
-		super(id, nome, data, local, posicoes);
-		setKilometragem(kilometragem);
+	public Estrada(int id, String nome, String data, String local, 
+			double kilometragem, double tempoProva, boolean acidentado,
+				List<Posicao> posicoes) {
+		super(id, nome, data, local, kilometragem, tempoProva, posicoes);
 		setAcidentado(acidentado);
 	}
 
+	private boolean acidentado; 
+
+	
 	public boolean isAcidentado() {
 		return acidentado;
 	}
@@ -21,24 +21,20 @@ public class Estrada extends Evento {
 	public void setAcidentado(boolean acidentado) {
 		this.acidentado = acidentado;
 	}
-
-	public double getKilometragem() {
-		return kilometragem;
-	}
-
-	public void setKilometragem(double kilometragem) {
-		this.kilometragem = kilometragem;
-	}
+	
 
 	@Override
 	public String toString() {
-		return "Dados do Evento: [kilometragem=" + kilometragem + "km, acidentado=" 
-				+ acidentado+ ",\nNome=" + getNome() + ", Data=" + getData()
-				+ ", Local=" + getLocal() +" ]";
-			
+		return super.toString()+"\nEstrada [acidentado=" + acidentado + "]";
 	}
 
-	
+	@Override
+	public double calculaPremio() {
+		double valor = getKilometragem() * 5.00; 
+		if (this.acidentado)
+			valor += valor * 0.15;
+		return valor;
+	}
 
 	
 	
