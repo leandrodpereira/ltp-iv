@@ -10,7 +10,7 @@ public class Divisao {
 	
 	
 	public static void dividir(int x, int y){
-			JOptionPane.showMessageDialog(null,(float)x/y);
+			JOptionPane.showMessageDialog(null,x/y);
 	}
 
 	
@@ -41,15 +41,13 @@ public class Divisao {
 				 * Multi Cacth Java 7
 				 */
 				}catch (ArithmeticException | NumberFormatException e1) {
-					e1.printStackTrace();
-					
+					e1.printStackTrace();					
 					JOptionPane.showMessageDialog(null,"Entrada Inválida\n"+e1.getMessage());
 				
-			   }
-			
+			   }			
 				finally{
-					DateFormat d = DateFormat.getDateInstance();
-					System.err.println("Aplicação finalizada em "+
+					DateFormat d = DateFormat.getDateTimeInstance();
+					System.err.println("Executado em "+
 							d.format(System.currentTimeMillis()));
 				}
 			
