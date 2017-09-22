@@ -13,13 +13,15 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 /**
+ * 
  * Classe que monta uma tela simples de login
  * @author leandro
  */
-public class ControleText extends JFrame{
+public class Exemplo6 extends JFrame{
 	/**
 	 * Atributos
 	 */
+	
 	JButton ok = new JButton("Ok");
 	JButton cancel = new JButton("Cancelar");
 	JTextField login = new JTextField();
@@ -27,7 +29,7 @@ public class ControleText extends JFrame{
 	/**
 	 * Construtor
 	 */
-	public ControleText() {
+	public Exemplo6() {
 		super("Textos e senhas");
 		
 		ok.addActionListener(new BotaoOkListener());
@@ -50,7 +52,7 @@ public class ControleText extends JFrame{
 
 	public static void main(String[] args) {
 		
-		new ControleText();
+		new Exemplo6();
 	}
 	/**
 	 * Classe que implementa o método apenas para os eventos do botão "Ok"

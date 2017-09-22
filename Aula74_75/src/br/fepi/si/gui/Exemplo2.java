@@ -1,24 +1,31 @@
 package br.fepi.si.gui;
 
-import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.FlowLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class Layout extends JFrame {
+
+/**
+ * Exemplo de uso de Layouts
+ * @author Leandro
+ *
+ */
+public class Exemplo2 extends JFrame {
 	
-	public Layout(){
+		private static final long serialVersionUID = 1L;
+
+	public Exemplo2(){
 		super("Layouts");
 		
-		Container c = getContentPane(); //recuperando através de uma variável
+		Container c = getContentPane(); //recuperando o container através de uma variável
 		
 		/*c.setLayout(new BorderLayout());
 		
 		c.add(BorderLayout.NORTH, new JButton("1"));
-		c.add(BorderLayout.SOUTH, new JButton("2")); */
-		
+		c.add(BorderLayout.SOUTH, new JButton("2"));  //Exemplo com BorderLayout
+		 */		
 		c.setLayout(new FlowLayout()); //Método que define o layout do container
 		c.add(new JButton("1"));
 		c.add(new JButton("2"));
@@ -30,7 +37,7 @@ public class Layout extends JFrame {
 
 	public static void main(String[] args) {
 		
-		new Layout();
+		new Exemplo2();
 	}
 
 }

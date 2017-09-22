@@ -7,21 +7,28 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
-public class Layout2 extends JFrame{
+/**
+ * Exemplo com 2 Layouts
+ * @author Leandro
+ *
+ */
+public class Exemplo3 extends JFrame{
 	
-	public Layout2(){
+	private static final long serialVersionUID = 1L;
+
+	public Exemplo3(){
 		super("Janela 2");
 		
-		Container c = getContentPane(); //retorna o Container principal
+		Container c = getContentPane(); 
 		
-		Container c2 = new JPanel();
-		c2.setLayout(new GridLayout(4, 1));
+		Container c2 = new JPanel(); //Adicionando outro Layout
+		
+		c2.setLayout(new GridLayout(4, 1));//4 linhas e 1 coluna
 		
 		c.setLayout(new BorderLayout());
 		c.add(BorderLayout.CENTER, new JButton("Centro"));
 		
-		c.add(BorderLayout.EAST, c2);
+		c.add(BorderLayout.EAST, c2); //Inserindo o grid do lado direito 
 		
 		c2.add(new JButton("Ok"));
 		c2.add(new JButton("Cancel"));
@@ -49,7 +56,7 @@ public class Layout2 extends JFrame{
 	}
 
 	public static void main(String[] args) {
-		new Layout2();
+		new Exemplo3();
 
 	}
 

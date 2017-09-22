@@ -7,11 +7,18 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class Eventos extends JFrame implements ActionListener{
+/**
+ * Exemplo de captura simples de um evento 
+ * @author Leandro
+ *
+ */
+public class Exemplo4 extends JFrame implements ActionListener{
 	
+	
+	private static final long serialVersionUID = 1L;
 	JButton bt;
 	
-	public Eventos(){
+	public Exemplo4(){
 		super("Eventos");
 		
 		bt = new JButton("Clique");
@@ -26,7 +33,7 @@ public class Eventos extends JFrame implements ActionListener{
 
 	public static void main(String[] args) {
 		
-		new Eventos();
+		new Exemplo4();
 
 	}
 

@@ -9,13 +9,19 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class ControleLabel extends JFrame {
-	/**
-	 * Construtor super, componente, container e métodos do Frame
-	 */
-	public ControleLabel(){
+/**
+ * Exemplo com Rótulo, fontes e imagens
+ */
+public class Exemplo5 extends JFrame {
+	
+	private static final long serialVersionUID = 1L;
+
+	
+	public Exemplo5(){
 				
-		super("Exemplo Label");		
+		super("Exemplo Label");	
+		
+		
 		
 		Font f = new Font("serif", Font.BOLD | Font.ITALIC, 20);
 		
@@ -43,7 +49,7 @@ public class ControleLabel extends JFrame {
 
 	public static void main(String[] args) {
 
-		new ControleLabel();
+		new Exemplo5();
 
 	}
 
