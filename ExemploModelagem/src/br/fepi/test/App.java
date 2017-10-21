@@ -14,8 +14,7 @@ public class App {
 		Ciclista c1 = new Ciclista(1, "Zezinho", "BR", 'M',new Bicicleta("Caloi 10"));
 		Ciclista c2 = new Ciclista(2, "Joaninha", "ARG", 'F',new Bicicleta("Ceci"));
 		Ciclista c3 = new Ciclista(3, "Joãozinho", "POR", 'M', new Bicicleta("Monarq"));
-		Ciclista c4 = new Ciclista(4, "Riquinho", "EUA", 'M', new Bicicleta("Caiçara"));
-		
+		Ciclista c4 = new Ciclista(4, "Riquinho", "EUA", 'M', new Bicicleta("Caiçara"));		
 		
 		
 		Estrada e = new Estrada(1, "Volta Ciclística", "17/01/2017", 
@@ -40,6 +39,8 @@ public class App {
 		System.out.println(p1.getCompetidor().getNome()+" correu a "
 				+p1.getProva().getNome()+" com a bicicleta "
 				+p1.getCompetidor().getBicicleta().getModelo());
+		
+		
 		
 		//Método da interface
 		System.out.println("Prêmio: $"+e.calculaPremio());
