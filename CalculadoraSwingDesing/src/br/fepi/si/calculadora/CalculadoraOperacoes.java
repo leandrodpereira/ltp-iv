@@ -231,9 +231,10 @@ public class CalculadoraOperacoes extends JFrame {
 						display.setText(String.valueOf(x*y));
 						break;
 					}
-					case divisao: {
-						display.setText(String.valueOf(x/y));
-						break;
+					case divisao: {						
+							display.setText(String.valueOf(x/y));
+							break;						
+										
 					}
 					case subtrcao: {
 						display.setText(String.valueOf(x-y));

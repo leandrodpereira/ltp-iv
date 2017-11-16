@@ -53,6 +53,7 @@ public class App {
 		c.getGames().add(g2);
 		
 		System.out.println(c.toString());
+	
 	}
 
 }
