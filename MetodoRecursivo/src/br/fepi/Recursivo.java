@@ -9,7 +9,7 @@ public class Recursivo {
 
 	/**
 	 * @param x
-	 * @return soma até o limite de x
+	 * @return soma atÃ© o limite de x
 	 */
 	public static int soma (int x){
 		if (x == 1){			
@@ -52,7 +52,7 @@ public class Recursivo {
 	}
 	
 	/**
-	 * Método que percorre recursivamente diretórios
+	 * MÃ©todo que percorre recursivamente diretÃ³rios
 	 * @param path
 	 */
 	public static void listar (Path path){
