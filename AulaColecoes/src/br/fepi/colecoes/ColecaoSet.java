@@ -1,9 +1,12 @@
 package br.fepi.colecoes;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class ColecaoSet {
 
@@ -13,15 +16,41 @@ public class ColecaoSet {
 		                   "augusto", "maria", "joana", };
 		List<String> list = Arrays.asList(alunos);
 		
-		System.out.println(list);
+		System.out.println(list);*/
 		
-		//Criando Coleção Set (sem duplicidade)
-		Set<String> listSet = new HashSet<>(list);
+		//Criando Coleï¿½ï¿½o Set (sem duplicidade)
+		Set<Double> listSet = new HashSet<>();
+		listSet.add(8.0);
+		listSet.add(-9.7);
+		listSet.add(1.8);
 		
-		System.out.println(listSet);*/
+		System.out.println(listSet+""+listSet.size());
+		
+		//EstratÃ©gias de ordenaÃ§Ã£o: Converter para Array
+		Object[] order = listSet.toArray();	
+		
+		Arrays.sort(order);
+		
+		System.out.println(Arrays.toString(order));
+		
+		/*-----TreeSet: ordenaÃ§Ã£o natural
+		TreeSet<Double> listSet2 = new TreeSet<>();
+		listSet2.add(1.0);
+		listSet2.add(-5.0);
+		listSet2.add(0.0); 
+			
+		System.out.println(listSet2+"TreeSet");
+		
+		*/
 		
 		
-		//Unicidade com objetos usando o método equals 
+		TreeSet<String> listSet2 = new TreeSet<>();
+		listSet2.add("Fo".toUpperCase());
+		listSet2.add("gr".toUpperCase());
+		listSet2.add("aa".toUpperCase()); 
+		System.out.println(listSet2+"TreeSet");
+		
+		//Unicidade com objetos usando o mï¿½todo equals 
 		List<Produto> listaObjetos = new ArrayList<>();
 		listaObjetos.add(new Produto(1, "vassora"));
 		listaObjetos.add(new Produto(1, "vassora"));

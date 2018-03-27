@@ -12,15 +12,17 @@ public class ColecaoQueue extends LinkedList {
 		lanches.add("X-Salada");
 		lanches.add("X-Tudo");
 		lanches.add("Misto-quente");
+		lanches.offer("Teste");
 		
 		System.out.println(lanches);
 		//Primeiro da fila
 		System.out.println(lanches.peek());
 		//Retira o primeiro da fila
-		lanches.poll();
-		System.out.println(lanches);
+		System.out.println(lanches.poll());
+		System.out.println(lanches);		
 		
-		//Métodosadicionais para o tipo LinkedList
+		
+		//Mï¿½todosadicionais para o tipo LinkedList
 		LinkedList<String> lanches2 = (LinkedList) lanches;
 		lanches2.addFirst("X-Galinha");
 		System.out.println(lanches2);
