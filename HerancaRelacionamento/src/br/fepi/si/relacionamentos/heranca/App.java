@@ -27,11 +27,11 @@ public class App {
 		listaDeAlunos.add(ap1);
 		listaDeAlunos.add(ag1);
 		
-		for(Aluno recebeAluno : listaDeAlunos){
+		/*for(Aluno recebeAluno : listaDeAlunos){
 			System.out.println(recebeAluno.toString());
-		}
+		}*/
 		
-		
+		listaDeAlunos.forEach(System.out::println);
 		
 	}
 
