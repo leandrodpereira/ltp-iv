@@ -20,7 +20,7 @@ public class Aluno extends Pessoa {
 
 	@Override
 	public boolean verificaId(int numeroCaracteres) {
-		if(getCpf().length() != 11 ) {
+		if(getCpf().length() != numeroCaracteres ) {
 			return false;
 		}else return true;
 	}
