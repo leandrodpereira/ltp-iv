@@ -9,7 +9,7 @@ public class CarroPasseio extends Veiculo {
 
 	@Override
 	public boolean verificaId(int numeroCaracteres) {
-		if(getPlaca().length() != 7 ) {
+		if(getPlaca().length() != numeroCaracteres ) {
 			return false;
 		}else return true;
 	}
@@ -21,7 +21,7 @@ public class CarroPasseio extends Veiculo {
 				return "Roubado";
 			}
 		}
-		return "Nenhuma ocorrência";
+		return "Nenhuma ocorrÃªncia";
 	}
 
 }
