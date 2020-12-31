@@ -1,2 +1,2 @@
 # ltp-iv
-Laboratórios LTP-IV
+Laboratórios da Disciplina LTP-IV
